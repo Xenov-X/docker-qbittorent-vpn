@@ -128,7 +128,7 @@ echo "${TRANSMISSION_RPC_PASSWORD}" >> /config/transmission-credentials.txt
 # Persist transmission settings for use by transmission-daemon
 python3 /etc/openvpn/persistEnvironment.py /etc/transmission/environment-variables.sh
 
-TRANSMISSION_CONTROL_OPTS="--script-security 2 --up-delay --up /etc/openvpn/tunnelUp.sh --down /etc/openvpn/tunnelDown.sh"
+TRANSMISSION_CONTROL_OPTS="--script-security 2 --up-delay --up /usr/share/openrc/support/openvpn/up.sh --up /etc/openvpn/tunnelUp.sh --down /usr/share/openrc/support/openvpn/down.sh --down /etc/openvpn/tunnelDown.sh"
 
 ## If we use UFW or the LOCAL_NETWORK we need to grab network config info
 if [[ "${ENABLE_UFW,,}" == "true" ]] || [[ -n "${LOCAL_NETWORK-}" ]]; then
