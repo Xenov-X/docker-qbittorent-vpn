@@ -2,7 +2,7 @@
 # run with $@ arg from openvpn
 echo "$@"
 IP="$4"
-echo "locking IP to $4"
+echo "locking IP to $IP"
 
 QBT_CONFIG_FILE="/config/qBittorrent/config/qBittorrent.conf"
 
