@@ -7,6 +7,8 @@ until ifconfig | grep tun | grep -q "00-00-00-00-00-00-00-00-00-00-00-00-00-00-0
 done
 
 /etc/openvpn/DNS-Leak-Test.sh
+echo $QB_SAVE_PATH
+echo $QB_PROFILE
 
 qbittorrent-nox -d
 [[ ! -f /opt/tinyproxy/start.sh ]] || /opt/tinyproxy/start.sh
