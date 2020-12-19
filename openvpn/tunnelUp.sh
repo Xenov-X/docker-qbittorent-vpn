@@ -8,5 +8,5 @@ done
 
 /etc/openvpn/DNS-Leak-Test.sh
 
-qbittorrent-nox
+qbittorrent-nox -d
 [[ ! -f /opt/tinyproxy/start.sh ]] || /opt/tinyproxy/start.sh
