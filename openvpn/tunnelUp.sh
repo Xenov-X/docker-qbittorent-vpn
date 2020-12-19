@@ -5,9 +5,10 @@
 until ifconfig | grep tun | grep -q "00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00"; do
     sleep 0.5
 done
-
+# $1 is tun0 
+# $3 is VPN IP interface 
 /etc/openvpn/DNS-Leak-Test.sh
-echo "$@"
 
+set
 qbittorrent-nox -d 
 [[ ! -f /opt/tinyproxy/start.sh ]] || /opt/tinyproxy/start.sh
