@@ -10,5 +10,5 @@ done
 echo $QB_SAVE_PATH
 echo $QB_PROFILE
 
-qbittorrent-nox -d
+qbittorrent-nox -d --profile=$QBT_PROFILE --save-path=$QBT_SAVE_PATH --webui-port=$QBT_WEBUI_PORT
 [[ ! -f /opt/tinyproxy/start.sh ]] || /opt/tinyproxy/start.sh
