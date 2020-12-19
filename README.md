@@ -2,6 +2,10 @@ Build with
 `
 docker build -t qtorrent-vpn https://github.com/Xenov-X/docker-qbittorent-vpn.git
 `
+into folder with your edited docker-compose.yml
+`
+docker-compose up
+`
 
 # OpenVPN and Transmission with WebUI
 
