@@ -10,5 +10,5 @@ done
 /etc/openvpn/DNS-Leak-Test.sh
 
 set
-qbittorrent-nox -d 
+qbittorrent-nox -d --webui-port=8080 --profile=/config --save-path=/downloads
 [[ ! -f /opt/tinyproxy/start.sh ]] || /opt/tinyproxy/start.sh
