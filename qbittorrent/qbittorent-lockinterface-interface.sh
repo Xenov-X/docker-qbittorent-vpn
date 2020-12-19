@@ -9,7 +9,7 @@ if [ -f "$QBT_CONFIG_FILE" ]; then
     # if Connection address line exists
     if grep -q 'Connection\\PortRangeMin' "$QBT_CONFIG_FILE"; then
         # Set connection interface address to the VPN address
-        sed -i -E 's/^.*\b(Connection.*Interface=)\b.*$/Connection\\InterfaceAddress='"$Interface"'/' "$QBT_CONFIG_FILE"
+        sed -i -E 's/^.*\b(Connection.*Interface=)\b.*$/Connection\\Interface='"$Interface"'/' "$QBT_CONFIG_FILE"
     else
         # add the line for configuring interface address to the qBittorrent config file
         printf 'Connection\\Interface=%s' "$Interface" >>"$QBT_CONFIG_FILE"
