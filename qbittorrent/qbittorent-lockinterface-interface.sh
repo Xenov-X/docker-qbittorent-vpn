@@ -2,7 +2,7 @@
 # run with $@ arg from openvpn
 echo "$@"
 Interface="$1"
-
+echo "locking interface to $Interface"
 QBT_CONFIG_FILE="/config/qBittorrent/config/qBittorrent.conf"
 
 if [ -f "$QBT_CONFIG_FILE" ]; then
