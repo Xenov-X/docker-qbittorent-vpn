@@ -1,4 +1,4 @@
-#!/
+#!/bin/bash
 # run with $@ arg from openvpn
 echo "$@"
 IP="$4"
