@@ -1,3 +1,8 @@
+Build with
+`
+docker build -t qtorrent-vpn https://github.com/Xenov-X/docker-qbittorent-vpn.git
+`
+
 # OpenVPN and Transmission with WebUI
 
 [![CircleCI builds](https://img.shields.io/circleci/build/github/haugene/docker-transmission-openvpn)](https://circleci.com/gh/haugene/docker-transmission-openvpn)
